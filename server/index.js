@@ -66,7 +66,7 @@ app.use((err, req, res, next) => {
 });
 
 if (require.main === module) {
-  app.listen(PORT, () => {
+  app.listen(PORT, '0.0.0.0', () => {
     console.log(`====================================================`);
     console.log(` MediAssist AI Server running at http://localhost:${PORT}`);
     console.log(` Mode: ${process.env.NODE_ENV || 'development'}`);
